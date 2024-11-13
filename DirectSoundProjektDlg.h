@@ -26,7 +26,10 @@ protected:
 	HICON m_hIcon;
 
 	CDirectSound m_ds;
-	LPDIRECTSOUNDBUFFER lpDSBSecondary1, lpDSBSecondary2, lpDSBSecondary3;
+	LPDIRECTSOUNDBUFFER lpDSBSecondary_CDUR1, lpDSBSecondary_264Hz;
+	LPDIRECTSOUNDBUFFER lpDSBSecondary_Klavier[8];
+	LPDIRECTSOUNDBUFFER lpDSBSecondary_DreiklangC, lpDSBSecondary_DreiklangE, lpDSBSecondary_DreiklangG;
+	LPDIRECTSOUNDBUFFER lpDSBSecondary_PCM;
 	double ton[9];
 
 	// Generierte Funktionen für die Meldungstabellen
@@ -38,4 +41,17 @@ public:
 	afx_msg void OnBnClickedTest1();
 	afx_msg void OnBnClickedStop();
 	afx_msg void OnTimer(UINT_PTR nIDEvent);
+	afx_msg void OnBnClicked264hz();
+	afx_msg void OnBnClickedPcm();
+	afx_msg void OnBnClickedCdur();
+	afx_msg void OnBnClickedDreiklang();
+	afx_msg void OnBnClickedEnde();
+	afx_msg void OnBnClickedC();
+	afx_msg void OnBnClickedD();
+	afx_msg void OnBnClickedE();
+	afx_msg void OnBnClickedF();
+	afx_msg void OnBnClickedG();
+	afx_msg void OnBnClickedA();
+	afx_msg void OnBnClickedH();
+	afx_msg void OnBnClickedC2();
 };
